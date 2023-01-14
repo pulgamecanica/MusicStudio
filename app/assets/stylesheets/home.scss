@@ -1,0 +1,154 @@
+@import "variables";
+@import "fonts";
+
+.btn {
+  cursor: pointer;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+:root {
+  --primary: #{$primary};
+  --secondary: #{$secondary};
+  --warning: #{$warning};
+  --light: #{$light};
+  --dark: #{$dark};
+  --bg-color: #{$bg-color};
+  --consumed-by-js: $primary;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  // color: var(--dark);
+  // font-size: 150%;
+}
+
+body {
+  font-family: 'Cormorant Garamond Regular';
+  background-color: var(--bg-color);
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  padding: 1rem;
+  .card {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    .card-curtain {
+      z-index: 1;
+      height: inherit;
+      width: inherit;
+      position: absolute;
+      background-image: url('backgroundGuitar.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      opacity: 0.9;
+    }
+    .card-main {
+      z-index: 2;
+      color: var(--light);
+      height: 100%;
+      width: 100%;
+      background-color: rgba(255, 255, 255, 0.1);
+      position: relative;
+      display: inline-block;
+      /* box-shadow: offset-x | offset-y | blur-radius | spread-radius | color */
+      -webkit-box-shadow: 0 0 5px 2px var(--secondary);
+      -moz-box-shadow: 0 0 5px 2px var(--secondary);
+      box-shadow: 0 0 5px 2px var(--secondary);
+      .card-side {
+        height: 100%;
+        width: 35px;
+        opacity: 0.85;
+        display: inline-block;
+        * {
+          z-index: 3;
+          padding: 0 1rem;
+          display: block;
+          transform-origin: bottom left;
+          transform: rotate(-90deg);
+          position: absolute;
+          letter-spacing: 2px;
+          bottom: 0;
+          left: 25px;
+        }
+        &:hover {
+          background-color: var(--dark);
+        }
+      }
+      .card-center-title {
+        display: inline-block;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+        font-size: 40px;
+        letter-spacing: 10px;
+        padding: 0.5em;
+        cursor: pointer;
+        &:hover {
+          outline: 4px var(--light) solid;
+          background-color: var(--dark);
+        }
+      }
+      .card-menu {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 0 1rem;
+        .logo {
+          svg {
+            transform: rotate(50deg);
+            width: 30px;
+            * {
+              stroke: white !important;
+            }
+          }
+        }
+      }
+      .card-bottom {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        bottom: 0;
+        left: 50%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: no-wrap;
+        gap: 1rem;
+        width: 10%;
+        align-items: center;
+        justify-content: center;
+        .tootlip {
+          display: none;
+        }
+        .icon {
+          display: block;
+          padding: 0.5rem;
+          svg {
+            width: 35px;
+            height: 35px;
+            * {
+              fill: var(--light);
+              stroke: var(--light);
+            }
+          }
+          &:hover {
+            border-bottom: 2px var(--light) solid;
+          }
+        }
+        &:hover .icon {
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}
