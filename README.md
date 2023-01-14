@@ -1,24 +1,28 @@
-# README
+# MusicStudio
+WebPage to Schedule Music Lessons
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+* Ruby version -> ruby 3.1.2
 
-Things you may want to cover:
+* System dependencies -> SCSS, Babel
 
-* Ruby version
+* Deployment instructions -> bundle install && bin/rails s
 
-* System dependencies
+***
 
-* Configuration
+## Home
 
-* Database creation
+High Resolution
 
-* Database initialization
+<img width="2048" alt="Screenshot 2023-01-14 at 5 08 16" src="https://user-images.githubusercontent.com/28810331/212456931-b9c51122-8e53-4a40-8212-a2e6516a7f99.png">
 
-* How to run the test suite
+Low Resolution
 
-* Services (job queues, cache servers, search engines, etc.)
+<img width="502" alt="Screenshot 2023-01-14 at 5 08 29" src="https://user-images.githubusercontent.com/28810331/212456934-7b3dab78-da0d-4477-9954-c1e0a8b2d777.png">
 
-* Deployment instructions
+***
 
-* ...
+## About
+
+<img width="1011" alt="Screenshot 2023-01-14 at 5 09 36" src="https://user-images.githubusercontent.com/28810331/212456963-9cdefe52-305f-405d-be60-9436e918eda2.png">
+
+I thought the footer was very creative because it looks like a guitar ;)
