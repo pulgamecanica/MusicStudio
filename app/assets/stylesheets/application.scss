@@ -30,6 +30,11 @@ a {
   }
 }
 
+.space-around {
+  justify-content: space-around !important;
+  align-items: center;
+}
+
 .card-container {
   padding: 4rem 0.5rem;
   display: flex;
@@ -176,9 +181,10 @@ a {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-  }
-  .card-image {
     position: relative;
+    @media screen and (max-width: $medium) {
+      width: 100%;
+    }
     .image-side {
       white-space: nowrap;
       text-overflow: ellipsis;
@@ -243,6 +249,21 @@ a {
         }
         line-height: 150%;
       }
+      label {
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        line-height: 25px;
+      }
+      input {
+        padding: 0.5rem;
+        font-size: 15px;
+        width: 200px;
+      }
+    }
+    .card-form-continue {
+      float: right;
+      margin: 1rem;
+      padding: 0 2rem;
     }
   }
   .card-image {
