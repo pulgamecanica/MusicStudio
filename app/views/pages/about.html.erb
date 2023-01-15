@@ -1,81 +1,81 @@
-<div class="card-container">
+<div class="card-container card col">
 
-	<div class="card-duo normal">
-		<div class="card-menu btn">
-        	<%= svg_icon("menu-2lines") %>
-			<p>Menu</p>
-		</div>
-		<div class="card-control">
-			<span class="card-control-prev btn">
-        		<%= svg_icon("arrow-left") %>
-				<span class="font-semi-bold-italic">Prev</span>
-			</span>
-			<span class="card-control-next btn">
-				<span class="font-semi-bold-italic">Next</span>
-				<%= svg_icon("arrow-right") %>
-			</span>
-		</div>
-		<div class="card-content page-1 active">
-			<aside>
-				<div class="card-title font-bold">
-					<span>S</span>
-					<span>amuel <br>Hernandez</span>
-				</div>
-				<div class="card-text">
-					<hr>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi viverra hendrerit ornare. Nunc feugiat nisl eget felis iaculis, id viverra elit eleifend. Mauris a massa nec nisi efficitur finibus ac semper leo. Curabitur accumsan ex at vehicula pulvinar. Etiam blandit est in sapien semper tristique.
-					Aliquam sollicitudin nulla nunc, vitae ullamcorper diam interdum et. Curabitur porttitor vel leo at sodales. Maecenas eu lobortis metus, eget facilisis lorem.
-					<br>
-					Etiam in posuere neque, eu pretium sem. Suspendisse nec dolor eleifend, commodo neque eu, lacinia mauris. Suspendisse vehicula ligula id vulputate tincidunt. Aliquam quis suscipit nibh, non mattis urna. Fusce ac justo vel eros maximus lacinia. Nullam eleifend urna vel velit hendrerit, in porttitor nisl cursus.
-				</div>
-				<div class="card-side font-light-italic">SomeSide</div>
-			</aside>
-		</div>
-		<div class="card-image" style="background-image: url(<%= asset_path("card1.png")%>);">
-			<aside>
-				<div class="image-footer">Some Text Here 1</div>
-				<div class="image-side">Some side here 1</div>
-			</aside>
-		</div>
-	</div>
+  <div class="card shadow row">
+    <div class="card-menu btn">
+      <%= svg_icon("menu-2lines") %>
+      <p>Menu</p>
+    </div>
+    <div class="card-control">
+      <span class="card-control-prev btn">
+        <%= svg_icon("arrow-left") %>
+        <span class="font-semi-bold-italic">Prev</span>
+      </span>
+      <span class="card-control-next btn">
+        <span class="font-semi-bold-italic">Next</span>
+        <%= svg_icon("arrow-right") %>
+      </span>
+    </div>
+    <div class="col card-content page-1 active">
+      <aside>
+        <div class="card-title font-bold">
+          <span>S</span>
+          <span>amuel <br>Hernandez</span>
+        </div>
+        <div class="card-text">
+          <hr>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi viverra hendrerit ornare. Nunc feugiat nisl eget felis iaculis, id viverra elit eleifend. Mauris a massa nec nisi efficitur finibus ac semper leo. Curabitur accumsan ex at vehicula pulvinar. Etiam blandit est in sapien semper tristique.
+          Aliquam sollicitudin nulla nunc, vitae ullamcorper diam interdum et. Curabitur porttitor vel leo at sodales. Maecenas eu lobortis metus, eget facilisis lorem.
+          <br>
+          Etiam in posuere neque, eu pretium sem. Suspendisse nec dolor eleifend, commodo neque eu, lacinia mauris. Suspendisse vehicula ligula id vulputate tincidunt. Aliquam quis suscipit nibh, non mattis urna. Fusce ac justo vel eros maximus lacinia. Nullam eleifend urna vel velit hendrerit, in porttitor nisl cursus.
+        </div>
+        <div class="card-side font-light-italic">SomeSide</div>
+      </aside>
+    </div>
+    <div class="col card-image" style="background-image: url(<%= asset_path("card1.png")%>);">
+      <aside>
+        <div class="image-footer">Some Title</div>
+        <div class="image-side">Some Side Text</div>
+      </aside>
+    </div>
+  </div>
 
-	<div class="card-duo reverse">
-		<div class="card-menu btn">
-			<%= svg_icon("menu-2lines") %>
-			<p>Menu</p>
-		</div>
-		<div class="card-control">
-			<span class="card-control-prev btn">
-				<%= svg_icon("arrow-left") %>
-				<span class="font-semi-bold-italic">Prev</span>
-			</span>
-			<span class="card-control-next btn">
-				<span class="font-semi-bold-italic">Next</span>
-				<%= svg_icon("arrow-right") %>
-			</span>
-		</div>
-		<div class="card-content page-1 active">
-			<aside>
-				<div class="card-title font-bold">
-					<span>S</span>
-					<span>amuel <br>Hernandez</span>
-				</div>
-				<div class="card-text">
-					<hr>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi viverra hendrerit ornare. Nunc feugiat nisl eget felis iaculis, id viverra elit eleifend. Mauris a massa nec nisi efficitur finibus ac semper leo. Curabitur accumsan ex at vehicula pulvinar. Etiam blandit est in sapien semper tristique.
-					Aliquam sollicitudin nulla nunc, vitae ullamcorper diam interdum et. Curabitur porttitor vel leo at sodales. Maecenas eu lobortis metus, eget facilisis lorem.
-					<br>
-					Etiam in posuere neque, eu pretium sem. Suspendisse nec dolor eleifend, commodo neque eu, lacinia mauris. Suspendisse vehicula ligula id vulputate tincidunt. Aliquam quis suscipit nibh, non mattis urna. Fusce ac justo vel eros maximus lacinia. Nullam eleifend urna vel velit hendrerit, in porttitor nisl cursus.
+  <div class="card shadow row-rev">
+    <div class="card-menu btn">
+      <%= svg_icon("menu-2lines") %>
+      <p>Menu</p>
+    </div>
+    <div class="card-control">
+      <span class="card-control-prev btn">
+        <%= svg_icon("arrow-left") %>
+        <span class="font-semi-bold-italic">Prev</span>
+      </span>
+      <span class="card-control-next btn">
+        <span class="font-semi-bold-italic">Next</span>
+        <%= svg_icon("arrow-right") %>
+      </span>
+    </div>
+    <div class="col card-content page-1 active">
+      <aside>
+        <div class="card-title font-bold">
+          <span>S</span>
+          <span>amuel <br>Hernandez</span>
+        </div>
+        <div class="card-text">
+          <hr>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi viverra hendrerit ornare. Nunc feugiat nisl eget felis iaculis, id viverra elit eleifend. Mauris a massa nec nisi efficitur finibus ac semper leo. Curabitur accumsan ex at vehicula pulvinar. Etiam blandit est in sapien semper tristique.
+          Aliquam sollicitudin nulla nunc, vitae ullamcorper diam interdum et. Curabitur porttitor vel leo at sodales. Maecenas eu lobortis metus, eget facilisis lorem.
+          <br>
+          Etiam in posuere neque, eu pretium sem. Suspendisse nec dolor eleifend, commodo neque eu, lacinia mauris. Suspendisse vehicula ligula id vulputate tincidunt. Aliquam quis suscipit nibh, non mattis urna. Fusce ac justo vel eros maximus lacinia. Nullam eleifend urna vel velit hendrerit, in porttitor nisl cursus.
+        </div>
+        <div class="card-side font-light-italic">SomeSide</div>
+      </aside>
+    </div>
+    <div class="col card-image" style="background-image: url(<%= asset_path("card2.png")%>);">
+      <aside>
+        <div class="image-footer">Some Title</div>
+        <div class="image-side">Some Side Text</div>
+      </aside>
+    </div>
+  </div>
 
-				</div>
-				<div class="card-side font-light-italic">SomeSide1</div>
-			<aside>
-		</div>
-		<div class="card-image" style="background-image: url(<%= asset_path("card2.png")%>);">
-			<aside>
-				<div class="image-footer">Some Text Here 2</div>
-				<div class="image-side">Some side here 2</div>
-			</aside>
-		</div>
-	</div>
 </div>
